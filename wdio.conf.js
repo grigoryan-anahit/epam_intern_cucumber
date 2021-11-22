@@ -2,8 +2,7 @@
  const {hideBin} = require('yargs/helpers')
 
  const {argv} = yargs(hideBin(process.argv));
-// const allureReporter = require('@wdio/allure-reporter').default
-// const allure = require('allure-commandline')
+
 
 exports.config = {
     //
@@ -117,7 +116,7 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver', 'firefox-profile'],
+    services: ['chromedriver'],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -139,7 +138,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',['junit', {
+     outputDir: './reports',
+     outputFileFormat:function (options){
+         return `results-${new Date().getTime()}.xml`;
+     }
+ }]],
 
 
 
@@ -169,12 +173,13 @@ exports.config = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-        //tagExpression:['@smoke or @searching'],
+       tagExpression: argv.tags || '@all',
+       // tagExpression:'@all',
+       //  tags: argv.tags || '@all',
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
-        ignoreUndefinedDefinitions: false,
-         //tags: argv.tags || '@all'
+        ignoreUndefinedDefinitions: false
 
     },
 

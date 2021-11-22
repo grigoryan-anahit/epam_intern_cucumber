@@ -4,11 +4,11 @@ Feature: Epam page
   Background:  open Epam page
     Given  I open epam.com
 
-  @smoke
+
   Scenario:open Epam page check title
     When  Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'
     Then  I wait 1 seconds
-
+  @ex
   Scenario Outline:Navigation menu hover
     Given  I move mouse to navigation menu "<item>" items
     Then   Each menu item "<item>" should change color to skyblue
