@@ -49,7 +49,7 @@ Then (/^Should see search results$/,async ()=>{
 });
           ///////////
 Given(/^I go to 'Our Work' page$/, async ()=>{
-    await browser.pause(5000);
+    await browser.pause(9000);
     await EpamPage.menuItemOurWork.click();
     await browser.pause(5000);
 });
