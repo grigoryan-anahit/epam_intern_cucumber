@@ -18,11 +18,12 @@ Then(/^I wait 1 seconds$/, async () => {
           ////////////
  Given(/^I move mouse to navigation menu "([^"]*)" items$/,async (number)=>{
       await EpamPage.menuItem(number);
+     await browser.pause(3000);
+
  });
 
 Then(/^Each menu item "([^"]*)" should change color to "([^"]*)"$/, async (number,color)=>{
-    await EpamPage.menuItem(number);
-     await browser.waitForEnabled;
+    //await EpamPage.menuItem(number);
     await expect(await EpamPage.menuItemHover(number)).toEqual(color);
 });
 
@@ -57,6 +58,7 @@ When (/^I fill 'Filter By' fields$/, async ()=>{
      await  EpamPage.filterByDiv.scrollIntoView();
     await browser.pause(1000)
     await EpamPage.filterIndustries.click();
+    await browser.pause(2000)
     await EpamPage.ffContent(2)
      await EpamPage.filterIndustries.click();
     await browser.pause(2000)
@@ -65,6 +67,7 @@ When (/^I fill 'Filter By' fields$/, async ()=>{
      await browser.pause(3000)
     await EpamPage.ff(2);
     await  EpamPage.filterContentTypes.click();
+    await browser.pause(2000);
 
 });
 Then(/^Should see filters$/,async ()=>{

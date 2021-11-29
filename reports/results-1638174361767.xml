@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Epam page" timestamp="2021-11-29T12:26:02" time="73.118" tests="9" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Epam page"/>
+      <property name="capabilities" value="chrome.96_0_4664_45.windows"/>
+      <property name="featureFile" value=".\features\epam.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="open Epam page check title" time="23.157">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ When Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'✅ Then I wait 1 seconds
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="7.057">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "0" items✅ Then Each menu item "0" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="5.27">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "1" items✅ Then Each menu item "1" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="5.022">
+      <failure/>
+      <error message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m"/>
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "2" items❗ Then Each menu item "2" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+      <system-err><![CDATA[
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+Expected: [32m"rgba([7m118[27m,2[7m0[27m5,2[7m16[27m,1)"[39m
+Received: [31m"rgba([7m255[27m,2[7m5[27m5,2[7m55[27m,1)"[39m
+    at World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:26:56)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="4.969">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "3" items✅ Then Each menu item "3" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="5.256">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "4" items✅ Then Each menu item "4" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="4.865">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "5" items✅ Then Each menu item "5" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Search" time="4.765">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I click on the Search icon✅ Then Should open search field✅ When I set the searching word and click search icon✅ And Should see search results
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Our Work page" time="10.76">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I go to 'Our Work' page✅ Then Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'✅ When I fill 'Filter By' fields✅ Then Should see filters
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

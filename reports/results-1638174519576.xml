@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Epam page" timestamp="2021-11-29T12:28:40" time="62.445" tests="9" failures="3" errors="3" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Epam page"/>
+      <property name="capabilities" value="chrome.96_0_4664_45.windows"/>
+      <property name="featureFile" value=".\features\epam.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="open Epam page check title" time="17.957">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ When Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'✅ Then I wait 1 seconds
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="7.99">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "0" items✅ Then Each menu item "0" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="5.907">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "1" items✅ Then Each menu item "1" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="5.016">
+      <failure/>
+      <error message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m"/>
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "2" items❗ Then Each menu item "2" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+      <system-err><![CDATA[
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+Expected: [32m"rgba([7m118[27m,2[7m0[27m5,2[7m16[27m,1)"[39m
+Received: [31m"rgba([7m255[27m,2[7m5[27m5,2[7m55[27m,1)"[39m
+    at World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:27:56)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="5.1">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "3" items✅ Then Each menu item "3" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="4.872">
+      <failure/>
+      <error message="Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m"/>
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "4" items❗ Then Each menu item "4" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+      <system-err><![CDATA[
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+Expected: [32m"rgba([7m118[27m,2[7m0[27m5,2[7m16[27m,1)"[39m
+Received: [31m"rgba([7m255[27m,2[7m5[27m5,2[7m55[27m,1)"[39m
+    at World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:27:56)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="4.914">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "5" items✅ Then Each menu item "5" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Search" time="4.867">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I click on the Search icon✅ Then Should open search field✅ When I set the searching word and click search icon✅ And Should see search results
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Our Work page" time="4.103">
+      <failure/>
+      <error message="element not interactable: element has zero size"/>
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I go to 'Our Work' page✅ Then Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'❗ When I fill 'Filter By' fields⚠️ Then Should see filters
+]]></system-out>
+      <system-err><![CDATA[
+element not interactable: element has zero size
+  (Session info: chrome=96.0.4664.45)
+Backtrace:
+	Ordinal0 [0x004E3AB3+2505395]
+	Ordinal0 [0x0047AE41+2076225]
+	Ordinal0 [0x00382498+1057944]
+	Ordinal0 [0x003ADCD9+1236185]
+	Ordinal0 [0x003A3857+1194071]
+	Ordinal0 [0x003C59F3+1333747]
+	Ordinal0 [0x003A3676+1193590]
+	Ordinal0 [0x003C5ADA+1333978]
+	Ordinal0 [0x003D5168+1397096]
+	Ordinal0 [0x003C58BB+1333435]
+	Ordinal0 [0x003A23E4+1188836]
+	Ordinal0 [0x003A323F+1192511]
+	GetHandleVerifier [0x0066CB36+1554566]
+	GetHandleVerifier [0x00714A0C+2242396]
+	GetHandleVerifier [0x00570E0B+523099]
+	GetHandleVerifier [0x0056FEB0+519168]
+	Ordinal0 [0x004802FD+2097917]
+	Ordinal0 [0x00484388+2114440]
+	Ordinal0 [0x004844C2+2114754]
+	Ordinal0 [0x0048E041+2154561]
+	BaseThreadInitThunk [0x76EBFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x776E7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x776E7A6E+238]
+
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
