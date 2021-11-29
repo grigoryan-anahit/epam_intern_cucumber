@@ -59,12 +59,12 @@ When (/^I fill 'Filter By' fields$/, async ()=>{
      await  EpamPage.filterByDiv.scrollIntoView();
     await browser.pause(1000)
     await EpamPage.filterIndustries.click();
-    await browser.pause(2000)
+    await browser.pause(5000)
     await EpamPage.ffContent(2)
      await EpamPage.filterIndustries.click();
 
      await  EpamPage.filterContentTypes.click();
-     await browser.pause(3000)
+     await browser.pause(5000)
     await EpamPage.ff(2);
     await  EpamPage.filterContentTypes.click();
     await browser.pause(2000);

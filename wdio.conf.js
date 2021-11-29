@@ -139,14 +139,11 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',['junit', {
      outputDir: './reports',
-     outputFileFormat:function (options){
+        outputFileFormat: function() {
          return `results-${new Date().getTime()}.xml`;
      }
  }]],
 
-
-
-    //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
 
@@ -311,9 +308,9 @@ exports.config = {
     //  after: function (result, capabilities, specs) {
     //      browser.url('https://www.epam.com/')
     // },
-//     afterAll: (async ()=>{
-//       await  browser.url('https://www.epam.com/')
-// })
+    afterAll: (async ()=>{
+      //await  browser.takeScreenshot()
+})
     /**
      * Gets executed right after terminating the webdriver session.
      * @param {Object} config wdio configuration object
