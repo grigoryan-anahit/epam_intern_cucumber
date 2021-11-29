@@ -10,7 +10,7 @@ Feature: Epam page
     Then  I wait 1 seconds
   @ex
   Scenario Outline:Navigation menu hover
-    Given  I move mouse to navigation menu "<item>" items
+   # Given  I move mouse to navigation menu "<item>" items
     Then   Each menu item "<item>" should change color to "<color>"
 
     Examples:

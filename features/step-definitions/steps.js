@@ -16,14 +16,15 @@ Then(/^I wait 1 seconds$/, async () => {
     await browser.pause(1000);
 });
           ////////////
- Given(/^I move mouse to navigation menu "([^"]*)" items$/,async (number)=>{
-      await EpamPage.menuItem(number);
-     await browser.pause(3000);
-
- });
+ // Given(/^I move mouse to navigation menu "([^"]*)" items$/,async (number)=>{
+ //      await EpamPage.menuItem(number);
+ //
+ // });
 
 Then(/^Each menu item "([^"]*)" should change color to "([^"]*)"$/, async (number,color)=>{
-    //await EpamPage.menuItem(number);
+    await EpamPage.menuItem(number);
+    await browser.pause(3000);
+
     await expect(await EpamPage.menuItemHover(number)).toEqual(color);
 });
 

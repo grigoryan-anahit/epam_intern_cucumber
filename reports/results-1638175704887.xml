@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Epam page" timestamp="2021-11-29T12:48:25" time="13.798" tests="9" failures="9" errors="9" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Epam page"/>
+      <property name="capabilities" value="chrome.96_0_4664_45.win32"/>
+      <property name="featureFile" value=".\features\epam.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="open Epam page check title" time="0.007">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ When Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'
+⚠️ Then I wait 1 seconds
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Navigation menu hover" time="0.003">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I move mouse to navigation menu "0" items
+⚠️ Then Each menu item "0" should change color to "rgba(118,205,216,1)"
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Navigation menu hover" time="0.001">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I move mouse to navigation menu "1" items
+⚠️ Then Each menu item "1" should change color to "rgba(123,187,198,1)"
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Navigation menu hover" time="0.001">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I move mouse to navigation menu "2" items
+⚠️ Then Each menu item "2" should change color to "rgba(118,205,216,1)"
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Navigation menu hover" time="0.002">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I move mouse to navigation menu "3" items
+⚠️ Then Each menu item "3" should change color to "rgba(123,187,198,1)"
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Navigation menu hover" time="0.001">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I move mouse to navigation menu "4" items
+⚠️ Then Each menu item "4" should change color to "rgba(118,205,216,1)"
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Navigation menu hover" time="0.001">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I move mouse to navigation menu "5" items
+⚠️ Then Each menu item "5" should change color to "rgba(118,205,216,1)"
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Search" time="0.002">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I click on the Search icon
+⚠️ Then Should open search field
+⚠️ When I set the searching word and click search icon
+⚠️ And Should see search results
+
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.win32.Epam page" name="Our Work page" time="0.001">
+      <failure/>
+      <error message="Error: Command &quot;maximizeWindow&quot; is not yet implemented"/>
+      <system-out><![CDATA[
+❗ Given I open epam.com
+⚠️ Given I go to 'Our Work' page
+⚠️ Then Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'
+⚠️ When I fill 'Filter By' fields
+⚠️ Then Should see filters
+]]></system-out>
+      <system-err><![CDATA[
+Error: Command "maximizeWindow" is not yet implemented
+    at Browser.retries (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\devtools\build\devtoolsdriver.js:90:34)
+    at Browser.wrapCommandFn (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:131:38)
+    at async World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:7:5)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
