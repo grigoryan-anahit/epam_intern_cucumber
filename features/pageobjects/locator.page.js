@@ -68,15 +68,14 @@ class EpamPage extends Page {
       await  this.filterContentTypeUl.$$(`span`)[index].click();
     }
 
-    async   menuItem (index) {
-         return  this.topNavigationUl.$$('.top-navigation__item-link')[index].moveTo();
+      async menuItem (index) {
+         const el=await this.topNavigationUl.$$('.top-navigation__item-link')[index];
+         return  await el.moveTo();
     }
-    async   menuItemHover (num) {
-         return await this.topNavigationUl.$$('.top-navigation__item-link')[num].getCSSProperty('color');
-
+   async menuItemHover (num) {
+         const el=await this.topNavigationUl.$$('.top-navigation__item-link')[num];
+         return (await el.getCSSProperty('color')).value;
     }
-
-
 }
 
 module.exports = new EpamPage();

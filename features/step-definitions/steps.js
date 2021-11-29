@@ -20,12 +20,12 @@ Then(/^I wait 1 seconds$/, async () => {
       await EpamPage.menuItem(number);
  });
 
-Then(/^Each menu item "([^"]*)" should change color to skyblue$/, async (number)=>{
-    await browser.pause(3000);
-    const hoverItem=await EpamPage.menuItemHover(number);
-     expect(hoverItem).toHaveValue("rgba(118,205,216,1)")
-     await browser.pause(1000);
+Then(/^Each menu item "([^"]*)" should change color to "([^"]*)"$/, async (number,color)=>{
+    await EpamPage.menuItem(number);
+     await browser.waitForEnabled;
+    await expect(await EpamPage.menuItemHover(number)).toEqual(color);
 });
+
           /////////////
 Given(/^I click on the Search icon$/,async ()=>{
     await EpamPage.searchBtn.click();
@@ -65,9 +65,6 @@ When (/^I fill 'Filter By' fields$/, async ()=>{
      await browser.pause(3000)
     await EpamPage.ff(2);
     await  EpamPage.filterContentTypes.click();
-
-
-
 
 });
 Then(/^Should see filters$/,async ()=>{

@@ -11,15 +11,16 @@ Feature: Epam page
   @ex
   Scenario Outline:Navigation menu hover
     Given  I move mouse to navigation menu "<item>" items
-    Then   Each menu item "<item>" should change color to skyblue
+    Then   Each menu item "<item>" should change color to "<color>"
+
     Examples:
-      | item |
-      | 0    |
-      | 1    |
-      | 2    |
-      | 3    |
-      | 4    |
-      | 5    |
+      | item | color               |
+      | 0    | rgba(118,205,216,1) |
+      | 1    |rgba(123,187,198,1)  |
+      | 2    | rgba(118,205,216,1) |
+      | 3    |rgba(123,187,198,1)  |
+      | 4    | rgba(118,205,216,1) |
+      | 5    | rgba(118,205,216,1) |
 
   @searching
   Scenario: Search
