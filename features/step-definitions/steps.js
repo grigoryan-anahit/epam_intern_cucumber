@@ -50,6 +50,7 @@ Then (/^Should see search results$/,async ()=>{
           ///////////
 Given(/^I go to 'Our Work' page$/, async ()=>{
     await EpamPage.menuItemOurWork.click();
+    await browser.pause(2000);
 });
 Then (/^Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'$/,async ()=>{
     await expect(await browser).toHaveTitle('Explore our Work | EPAM Customer Stories, Brochures & Accelerators')
@@ -70,8 +71,8 @@ When (/^I fill 'Filter By' fields$/, async ()=>{
 
 });
 Then(/^Should see filters$/,async ()=>{
-    await  expect(EpamPage.filterDisplayFirst).toHaveText("BUSINESS INFORMATION SERVICES");
-    await  expect(EpamPage.filterDisplaySecond).toHaveText("BROCHURES");
+    await  expect(await EpamPage.filterDisplayFirst).toHaveText("BUSINESS INFORMATION SERVICES");
+    await  expect(await EpamPage.filterDisplaySecond).toHaveText("BROCHURES");
     await browser.pause(1000)
 })
 
