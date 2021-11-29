@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Epam page" timestamp="2021-11-29T11:04:12" time="39.082" tests="9" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Epam page"/>
+      <property name="capabilities" value="chrome.96_0_4664_45.windows"/>
+      <property name="featureFile" value=".\features\epam.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="open Epam page check title" time="10.627">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ When Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'✅ Then I wait 1 seconds
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="2.711">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "0" items✅ Then Each menu item "0" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="3.043">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "1" items✅ Then Each menu item "1" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="2.948">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "2" items✅ Then Each menu item "2" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="1.019">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "3" items✅ Then Each menu item "3" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="0.891">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "4" items✅ Then Each menu item "4" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="0.876">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "5" items✅ Then Each menu item "5" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Search" time="4.6">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I click on the Search icon✅ Then Should open search field✅ When I set the searching word and click search icon✅ And Should see search results
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Our Work page" time="10.526">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I go to 'Our Work' page✅ Then Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'✅ When I fill 'Filter By' fields✅ Then Should see filters
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
