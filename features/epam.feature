@@ -29,8 +29,8 @@ Feature: Epam page
     When  I set the searching word and click search icon
     And   Should see search results
 
-#  Scenario:'Our Work' page
-#    Given I go to 'Our Work' page
-#    Then  Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'
-#    When  I fill 'Filter By' fields
-#    Then  Should see filters
+  Scenario:'Our Work' page
+    Given I go to 'Our Work' page
+    Then  Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'
+    When  I fill 'Filter By' fields
+    Then  Should see filters

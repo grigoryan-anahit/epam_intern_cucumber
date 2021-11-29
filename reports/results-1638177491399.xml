@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Epam page" timestamp="2021-11-29T13:18:12" time="38.851" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Epam page"/>
+      <property name="capabilities" value="chrome.96_0_4664_45.windows"/>
+      <property name="featureFile" value=".\features\epam.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="open Epam page check title" time="12.281">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ When Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'✅ Then I wait 1 seconds
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Search" time="10.371">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I click on the Search icon✅ Then Should open search field✅ When I set the searching word and click search icon✅ And Should see search results
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Our Work page" time="14.099">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I go to 'Our Work' page✅ Then Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'✅ When I fill 'Filter By' fields✅ Then Should see filters
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
