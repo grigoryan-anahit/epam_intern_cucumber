@@ -31,6 +31,6 @@ Feature: Epam page
 
   Scenario:'Our Work' page
     Given I go to 'Our Work' page
-    Then  Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'
-    When  I fill 'Filter By' fields
-    Then  Should see filters
+#    Then  Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'
+#    When  I fill 'Filter By' fields
+#    Then  Should see filters

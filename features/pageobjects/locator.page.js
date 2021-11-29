@@ -3,7 +3,7 @@ const Page = require('./page');
 class EpamPage extends Page {
 
     get menuItemOurWork() {
-        return $('[class="top-navigation__item-link"][href="/our-work"]');
+        return $('.//a[contains(@class,"top-navigation__item-link") and normalize-space()="Insights"]');
     }
 
     get topNavigationUl() {

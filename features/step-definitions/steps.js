@@ -4,8 +4,11 @@ const EpamPage = require('../pageobjects/locator.page');
 
 
 Given(/^I open epam.com$/, async () => {
-    await browser.maximizeWindow();
+    await browser.pause(1000);
+    await browser.maximizeWindow()
+    await browser.pause(7000);
     await EpamPage.open();
+    await browser.pause(7000);
 });
 
 When(/^Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'$/,  () => {
