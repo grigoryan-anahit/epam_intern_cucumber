@@ -21,12 +21,12 @@ Then(/^I wait 1 seconds$/, async () => {
  //
  // });
 
-Then(/^Each menu item "([^"]*)" should change color to "([^"]*)"$/, async (number,color)=>{
-    await EpamPage.menuItem(number);
-    await browser.pause(3000);
-
-    await expect(await EpamPage.menuItemHover(number)).toEqual(color);
-});
+// Then(/^Each menu item "([^"]*)" should change color to "([^"]*)"$/, async (number,color)=>{
+//     await EpamPage.menuItem(number);
+//     await browser.pause(3000);
+//
+//     await expect(await EpamPage.menuItemHover(number)).toEqual(color);
+// });
 
           /////////////
 Given(/^I click on the Search icon$/,async ()=>{
