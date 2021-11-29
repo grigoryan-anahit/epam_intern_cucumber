@@ -63,9 +63,11 @@ class EpamPage extends Page {
     }
     get navbar (){ return $('.header-ui')}
 
-
+    async   ffContent (index) {
+       return  await this.filterIndustriesUl.$$('li')[index].click();
+    }
   async   ff (index) {
-      await  this.filterContentTypeUl.$$(`span`)[index].click();
+     return  await  this.filterContentTypeUl.$$(`span`)[index].click();
     }
 
       async menuItem (index) {

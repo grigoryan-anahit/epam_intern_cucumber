@@ -57,7 +57,7 @@ When (/^I fill 'Filter By' fields$/, async ()=>{
      await  EpamPage.filterByDiv.scrollIntoView();
     await browser.pause(1000)
     await EpamPage.filterIndustries.click();
-     await EpamPage.filterIndustriesUl.$$('li')[2].click();
+    await EpamPage.ffContent(2)
      await EpamPage.filterIndustries.click();
     await browser.pause(2000)
 

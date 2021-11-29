@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Epam page" timestamp="2021-11-29T11:58:11" time="55.042" tests="9" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Epam page"/>
+      <property name="capabilities" value="chrome.96_0_4664_45.windows"/>
+      <property name="featureFile" value=".\features\epam.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="open Epam page check title" time="9.662">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ When Page title should be 'EPAM | Enterprise Software Development, Design & Consulting'✅ Then I wait 1 seconds
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="4.793">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "0" items✅ Then Each menu item "0" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="3.53">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "1" items✅ Then Each menu item "1" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="3.142">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "2" items✅ Then Each menu item "2" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="1.86">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "3" items✅ Then Each menu item "3" should change color to "rgba(123,187,198,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="2.208">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "4" items✅ Then Each menu item "4" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Navigation menu hover" time="2.561">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I move mouse to navigation menu "5" items✅ Then Each menu item "5" should change color to "rgba(118,205,216,1)"
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Search" time="6.132">
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I click on the Search icon✅ Then Should open search field✅ When I set the searching word and click search icon✅ And Should see search results
+]]></system-out>
+    </testcase>
+    <testcase classname="CucumberJUnitReport-chrome.96_0_4664_45.windows.Epam page" name="Our Work page" time="19.208">
+      <failure/>
+      <error message="Error: Expect $(`.//ul[@class=&quot;selected-items&quot;]/li[@class=&quot;filter-tag&quot;][2]`) to have text containing"/>
+      <system-out><![CDATA[
+✅ Given I open epam.com✅ Given I go to 'Our Work' page✅ Then Page title should be 'Explore our Work | EPAM Customer Stories, Brochures & Accelerators'✅ When I fill 'Filter By' fields❗ Then Should see filters
+]]></system-out>
+      <system-err><![CDATA[
+Error: Expect $(`.//ul[@class="selected-items"]/li[@class="filter-tag"][2]`) to have text containing
+
+Expected: [32m"BROCHURES"[39m
+Received: [31mundefined[39m
+    at World.<anonymous> (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\features\step-definitions\steps.js:72:49)
+    at World.executeAsync (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\shim.js:325:27)
+    at World.testFrameworkFnWrapper (C:\Users\Anahit_Grigoryan1\CUCUMBER_Projects\Cucumber_Epam\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
