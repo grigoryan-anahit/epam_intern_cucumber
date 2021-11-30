@@ -169,7 +169,7 @@ exports.config = {
         // <boolean> fail if there are any undefined or pending steps
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
-       tagExpression: argv.tags || '@all',
+       //tagExpression: argv.tags || '@all',
        // tagExpression:'@all',
        //  tags: argv.tags || '@all',
         // <number> timeout for step definitions
