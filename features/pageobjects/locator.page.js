@@ -8,19 +8,19 @@ class EpamPage extends Page {
 
     get topNavigationUl() {
         return $('.top-navigation__row')
-    }
+    };
 
     get searchBtn() {
         return $('.//*[@id="wrapper"]/div[2]/div[1]/header/div/ul/li[3]/div/button ')
-    }
+    };
 
     get searchField() {
         return $('#new_form_search')
-    }
+    };
 
     get searchUl() {
         return $('.frequent-searches__items')
-    }
+    };
 
     get searchUlLi() {
         return $$('.frequent-searches__item')
